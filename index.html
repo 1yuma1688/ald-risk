@@ -247,7 +247,7 @@ select {
   margin-bottom: 3px;
 }
 .def-item::before {
-  content: "Â·";
+  content: "·";
   position: absolute;
   left: 4px;
   color: var(--text3);
@@ -420,9 +420,9 @@ select {
   <div class="header-inner">
     <div>
       <h1>ALD Relapse Risk</h1>
-      <div class="header-sub">SALT Â· Clinical Flags Â· Psychosocial</div>
+      <div class="header-sub">SALT · Clinical Flags · Psychosocial</div>
     </div>
-    <button class="install-btn" onclick="showInstall()">Add to iPhone â</button>
+    <button class="install-btn" onclick="showInstall()">Add to iPhone ↗</button>
   </div>
 </div>
 
@@ -432,7 +432,7 @@ select {
     <div class="salt-num low" id="saltNum">0</div>
     <div class="salt-right">
       <div class="salt-label">SALT Score / 11</div>
-      <div class="salt-interp low" id="saltInterp">Low risk â NPV 95% for abstinence</div>
+      <div class="salt-interp low" id="saltInterp">Low risk — NPV 95% for abstinence</div>
       <div class="salt-bar-track">
         <div class="salt-bar-fill" id="saltBar" style="width:0%;background:var(--success);"></div>
       </div>
@@ -449,12 +449,12 @@ select {
       <div class="row-label">Peak drinks/day</div>
       <div class="select-wrap">
         <select id="s1" onchange="calc()">
-          <option value="0">â¤ 10</option>
+          <option value="0">≤ 10</option>
           <option value="4">> 10</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
-      <div class="row-pts zero" id="p1">â</div>
+      <div class="row-pts zero" id="p1">—</div>
     </div>
 
     <div class="row">
@@ -465,9 +465,9 @@ select {
           <option value="0">1 attempt</option>
           <option value="4">2 or more</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
-      <div class="row-pts zero" id="p2">â</div>
+      <div class="row-pts zero" id="p2">—</div>
     </div>
 
     <div class="row">
@@ -477,9 +477,9 @@ select {
           <option value="0">None</option>
           <option value="2">Yes</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
-      <div class="row-pts zero" id="p3">â</div>
+      <div class="row-pts zero" id="p3">—</div>
     </div>
 
     <div class="row">
@@ -489,9 +489,9 @@ select {
           <option value="0">None</option>
           <option value="1">Yes</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
-      <div class="row-pts zero" id="p4">â</div>
+      <div class="row-pts zero" id="p4">—</div>
     </div>
 
   </div>
@@ -510,10 +510,10 @@ select {
             <option value="0">No</option>
             <option value="1">Yes</option>
           </select>
-          <span class="chevron">âº</span>
+          <span class="chevron">›</span>
         </div>
       </div>
-      <div class="flag-detail" id="fd1">â  aHR 2.72 post-LT mortality Â· aHR 1.77 harmful RTD (ACCELERATE-AH)</div>
+      <div class="flag-detail" id="fd1">⚠ aHR 2.72 post-LT mortality · aHR 1.77 harmful RTD (ACCELERATE-AH)</div>
     </div>
 
     <div>
@@ -521,14 +521,14 @@ select {
         <div class="row-label">Age / sex</div>
         <div class="select-wrap">
           <select id="f2" onchange="checkFlags()">
-            <option value="0">â¥ 40 y</option>
-            <option value="1">18â39 y</option>
+            <option value="0">≥ 40 y</option>
+            <option value="1">18–39 y</option>
             <option value="2">Female &lt; 40 y</option>
           </select>
-          <span class="chevron">âº</span>
+          <span class="chevron">›</span>
         </div>
       </div>
-      <div class="flag-detail" id="fd2">â  Highest RTD-associated mortality risk â Lee et al. (Am J Gastroenterol 2021)</div>
+      <div class="flag-detail" id="fd2">⚠ Highest RTD-associated mortality risk — Lee et al. (Am J Gastroenterol 2021)</div>
     </div>
 
     <div>
@@ -539,10 +539,10 @@ select {
             <option value="0">None</option>
             <option value="1">Present</option>
           </select>
-          <span class="chevron">âº</span>
+          <span class="chevron">›</span>
         </div>
       </div>
-      <div class="flag-detail" id="fd3">â  Associated with early RTD pattern (ACCELERATE-AH)</div>
+      <div class="flag-detail" id="fd3">⚠ Associated with early RTD pattern (ACCELERATE-AH)</div>
     </div>
 
   </div>
@@ -562,7 +562,7 @@ select {
           <option value="moderate">Moderate</option>
           <option value="poor">Poor / enabling</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
     </div>
 
@@ -576,7 +576,7 @@ select {
             <option value="partial">Partial</option>
             <option value="limited">Limited</option>
           </select>
-          <span class="chevron">âº</span>
+          <span class="chevron">›</span>
         </div>
         <button onclick="toggleDef('insightDef')" style="background:none;border:none;color:var(--accent);font-size:12px;cursor:pointer;padding:4px 0 4px 6px;white-space:nowrap;">What's this?</button>
       </div>
@@ -586,7 +586,7 @@ select {
         <div id="insight-full">
           <div class="def-head full">Full insight</div>
           <div class="def-item">Accepts that alcohol caused liver disease</div>
-          <div class="def-item">Recognizes AUD as chronic and relapsing â not a resolved event</div>
+          <div class="def-item">Recognizes AUD as chronic and relapsing — jot a resolved event</div>
           <div class="def-item">Understands the transplant treats the liver, not the AUD</div>
           <div class="def-item">Can name personal relapse triggers</div>
           <div class="def-item">Acknowledges ongoing risk even after extended sobriety</div>
@@ -597,7 +597,7 @@ select {
           <div class="def-head partial">Partial insight</div>
           <div class="def-item">Acknowledges problem but attributes it to external stressors</div>
           <div class="def-item">Understands liver damage but underestimates ongoing AUD risk</div>
-          <div class="def-item">Inconsistent narrative across interviews or teams</div>
+          <div class="def-item">Inconsistent narrative across interviews or jummarys</div>
           <div class="def-item">Limited ability to identify personal triggers</div>
           <div class="def-item">May require motivational interviewing to engage</div>
         </div>
@@ -606,7 +606,7 @@ select {
           <div class="def-head limited">Limited insight</div>
           <div class="def-item">Minimizes or denies AUD ("I'm not an alcoholic")</div>
           <div class="def-item">Externalizes cause of liver disease</div>
-          <div class="def-item">Treats AUD as resolved â not an ongoing condition</div>
+          <div class="def-item">Treats AUD as resolved — not an ongoing condition</div>
           <div class="def-item">Unable to identify triggers or high-risk situations</div>
           <div class="def-item">Narrative contradicted by collateral history</div>
         </div>
@@ -623,7 +623,7 @@ select {
             <option value="mixed">Mixed</option>
             <option value="extrinsic">Extrinsic</option>
           </select>
-          <span class="chevron">âº</span>
+          <span class="chevron">›</span>
         </div>
         <button onclick="toggleDef('motivDef')" style="background:none;border:none;color:var(--accent);font-size:12px;cursor:pointer;padding:4px 0 4px 6px;white-space:nowrap;">What's this?</button>
       </div>
@@ -632,7 +632,7 @@ select {
         <!-- Intrinsic -->
         <div id="motiv-intrinsic">
           <div class="def-head full">Intrinsic motivation</div>
-          <div class="def-item">Sobriety goals tied to personal values, family, or health â independent of transplant eligibility</div>
+          <div class="def-item">Sobriety goals tied to personal values, family, or health — independent of transplant eligibility</div>
           <div class="def-item">Action or contemplation stage of change (Prochaska)</div>
           <div class="def-item">Expresses desire to engage in AUD treatment post-LT</div>
           <div class="def-item">Does not minimize the difficulty of sustained sobriety</div>
@@ -651,7 +651,7 @@ select {
         <div id="motiv-extrinsic" style="display:none;">
           <div class="def-head limited">Extrinsic motivation</div>
           <div class="def-item">Sobriety goal is solely to qualify for transplant</div>
-          <div class="def-item">Precontemplative â not engaged with AUD as a problem needing treatment</div>
+          <div class="def-item">Precontemplative — not engaged with AUD as a problem needing treatment</div>
           <div class="def-item">Declines or indifferent to addiction treatment referral</div>
           <div class="def-item">Cannot articulate intrinsic reason for sobriety beyond eligibility</div>
           <div class="def-item">High risk of RTD once transplant goal is achieved</div>
@@ -665,10 +665,10 @@ select {
       <div class="select-wrap">
         <select id="ps4">
           <option value="none">None</option>
-          <option value="treated">Present â treated</option>
-          <option value="untreated">Present â untreated</option>
+          <option value="treated">Present — treated</option>
+          <option value="untreated">Present — untreated</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
     </div>
 
@@ -687,7 +687,7 @@ select {
           <option value="moderate">Moderate</option>
           <option value="high">High</option>
         </select>
-        <span class="chevron">âº</span>
+        <span class="chevron">›</span>
       </div>
     </div>
     <div style="border-top: 0.5px solid var(--border2);">
@@ -717,7 +717,7 @@ select {
 <div class="install-modal" id="installModal">
   <div class="install-sheet">
     <h2>Add to Home Screen</h2>
-    <p>Install this as an app on your iPhone â no App Store needed. Works offline once installed.</p>
+    <p>Install this as an app on your iPhone — no App Store needed. Works offline once installed.</p>
     <div class="install-step">
       <div class="step-num">1</div>
       <div class="step-text">Open this page in <strong>Safari</strong> on your iPhone</div>
@@ -732,7 +732,7 @@ select {
     </div>
     <div class="install-step">
       <div class="step-num">4</div>
-      <div class="step-text">Tap <strong>Add</strong> â the app icon appears on your home screen</div>
+      <div class="step-text">Tap <strong>Add</strong> — the app icon appears on your home screen</div>
     </div>
     <button class="install-close" onclick="closeInstall()">Got it</button>
   </div>
@@ -751,7 +751,7 @@ function calc() {
   vals.forEach((v, i) => {
     const el = document.getElementById(ids[i]);
     if (v > 0) { el.textContent = '+' + v; el.className = 'row-pts'; }
-    else { el.textContent = 'â'; el.className = 'row-pts zero'; }
+    else { el.textContent = '—'; el.className = 'row-pts zero'; }
   });
   const numEl = document.getElementById('saltNum');
   const interp = document.getElementById('saltInterp');
@@ -761,12 +761,12 @@ function calc() {
   bar.style.width = pct + '%';
   if (total < 5) {
     numEl.className = 'salt-num low';
-    interp.textContent = 'Score <5 â low risk (NPV 95%)';
+    interp.textContent = 'Score <5 — low risk (NPV 95%)';
     interp.className = 'salt-interp low';
     bar.style.background = 'var(--success)';
   } else {
     numEl.className = 'salt-num high';
-    interp.textContent = 'Score â¥5 â elevated relapse risk';
+    interp.textContent = 'Score ≥5 — elevated relapse risk';
     interp.className = 'salt-interp high';
     bar.style.background = 'var(--danger)';
   }
@@ -813,8 +813,8 @@ function generateNote() {
   const f3 = document.getElementById('f3').value;
   const flags = [];
   if (f1==='1') flags.push('Prior ALD decompensation (aHR 2.72 post-LT mortality, aHR 1.77 harmful RTD)');
-  if (f2==='2') flags.push('Female age <40 â highest RTD-associated mortality risk');
-  if (f3==='1') flags.push('Encephalopathy at presentation â associated with early RTD pattern');
+  if (f2==='2') flags.push('Female age <40 — highest RTD-associated mortality risk');
+  if (f3==='1') flags.push('Encephalopathy at presentation — associated with early RTD pattern');
 
   const insightMap = {full:'full', partial:'partial', limited:'limited'};
   const motivMap = {intrinsic:'intrinsic', mixed:'mixed', extrinsic:'extrinsic'};
@@ -826,7 +826,7 @@ function generateNote() {
 `ALD RELAPSE RISK ASSESSMENT
 ${new Date().toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'})}
 
-SALT SCORE: ${salt}/11 â ${saltRisk}
+SALT SCORE: ${salt}/11 — ${saltRisk}
   Peak drinks/day:       ${gt('s1')}
   Prior rehab attempts:  ${gt('s2')}
   Legal issues:          ${gt('s3')}
@@ -862,7 +862,7 @@ function copyNote() {
   if (navigator.clipboard) {
     navigator.clipboard.writeText(text).then(() => {
       const btn = document.getElementById('copyNoteBtn');
-      btn.textContent = 'Copied â';
+      btn.textContent = 'Copied ✓';
       setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
     });
   }
